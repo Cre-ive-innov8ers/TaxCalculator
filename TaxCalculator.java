@@ -203,7 +203,7 @@ public class TaxCalculator {
             Double primary = 17235.00;
             Double secondary = 17235.00 + 9444.00;
             Double tertiary = 17235.00 + 9444.00 + 3145.00;
-            if (age < 65 && income <= 95750.00 ) {
+            if (age < 65 && income > 95750.00 ) {
                 if (income >= 1.00 && income <= 237100.00) {
                     taxPayable = income * 0.18;
                 } else if (income > 237100.00 && income <= 370500.00) {
@@ -226,7 +226,7 @@ public class TaxCalculator {
                 JOptionPane.showMessageDialog(null,
                         "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
                         "Result", JOptionPane.INFORMATION_MESSAGE);
-            }else if (age >= 65 && age < 75 && income > 95750.00 && income <= 148217.00) {
+            }else if (age >= 65 && age < 75 && income > 148217.00) {
                 if (income >= 1.00 && income <= 237100.00) {
                     taxPayable = income * 0.18;
                 } else if (income > 237100.00 && income <= 370500.00) {
