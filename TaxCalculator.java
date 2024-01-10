@@ -33,7 +33,7 @@ public class TaxCalculator {
 
         // Calculate the tax based on the income brackets
         double taxPayable = 0.00;
-       
+
         if (taxYear == 2022) {
             Double primary = 15714.00;
             Double secondary = 15714.00 + 8613.00;
@@ -145,7 +145,7 @@ public class TaxCalculator {
                 JOptionPane.showMessageDialog(null,
                         "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
                         "Result", JOptionPane.INFORMATION_MESSAGE);
-            }else if (age >= 65 && age < 75 && income > 141250.00) {
+            } else if (age >= 65 && age < 75 && income > 141250.00) {
                 if (income >= 1.00 && income <= 226000.00) {
                     taxPayable = income * 0.18;
                 } else if (income > 226000.00 && income <= 353100.00) {
@@ -168,7 +168,7 @@ public class TaxCalculator {
                 JOptionPane.showMessageDialog(null,
                         "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
                         "Result", JOptionPane.INFORMATION_MESSAGE);
-            }else if (age >= 75 && income > 157900.00) {
+            } else if (age >= 75 && income > 157900.00) {
                 if (income >= 1.00 && income <= 226000.00) {
                     taxPayable = income * 0.18;
                 } else if (income > 226000.00 && income <= 353100.00) {
@@ -191,88 +191,87 @@ public class TaxCalculator {
                 JOptionPane.showMessageDialog(null,
                         "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
                         "Result", JOptionPane.INFORMATION_MESSAGE);
-            }else {
+            } else {
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
                         "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + taxPayable,
                         "Result", JOptionPane.INFORMATION_MESSAGE);
             }
 
-
         } else if (taxYear == 2024) {
             Double primary = 17235.00;
             Double secondary = 17235.00 + 9444.00;
             Double tertiary = 17235.00 + 9444.00 + 3145.00;
-            if (age < 65 && income > 95750.00 ) {
+            if (age < 65 && income > 95750.00) {
                 if (income >= 1.00 && income <= 237100.00) {
                     taxPayable = income * 0.18;
                 } else if (income > 237100.00 && income <= 370500.00) {
                     taxPayable = 42678.00 + (income - 237100.00) * 0.26;
                 } else if (income > 370500.00 && income <= 512800.00) {
                     taxPayable = 77362.00 + (income - 370500.00) * 0.31;
-                }else if (income > 512800.00 && income <= 673000.00){
+                } else if (income > 512800.00 && income <= 673000.00) {
                     taxPayable = 121475.00 + (income - 512800.00) * 0.36;
-                }else if (income > 673000.00 && income <= 857900.00){
+                } else if (income > 673000.00 && income <= 857900.00) {
                     taxPayable = 191147.00 + (income - 673000.00) * 0.39;
-                }else if (income > 857900.00 && income <= 1817000.00){
+                } else if (income > 857900.00 && income <= 1817000.00) {
                     taxPayable = 251258.00 + (income - 857900.00) * 0.41;
-                }else if (income > 1817000.00){
+                } else if (income > 1817000.00) {
                     taxPayable = 644489.00 + (income - 1817000.00) * 0.45;
                 }
 
-              // Rebate subtraction
+                // Rebate subtraction
                 Double rebatedIncome = taxPayable - primary;
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
                         "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
                         "Result", JOptionPane.INFORMATION_MESSAGE);
-            }else if (age >= 65 && age < 75 && income > 148217.00) {
+            } else if (age >= 65 && age < 75 && income > 148217.00) {
                 if (income >= 1.00 && income <= 237100.00) {
                     taxPayable = income * 0.18;
                 } else if (income > 237100.00 && income <= 370500.00) {
                     taxPayable = 42678.00 + (income - 237100.00) * 0.26;
                 } else if (income > 370500.00 && income <= 512800.00) {
                     taxPayable = 77362.00 + (income - 370500.00) * 0.31;
-                }else if (income > 512800.00 && income <= 673000.00){
+                } else if (income > 512800.00 && income <= 673000.00) {
                     taxPayable = 121475.00 + (income - 512800.00) * 0.36;
-                }else if (income > 673000.00 && income <= 857900.00){
+                } else if (income > 673000.00 && income <= 857900.00) {
                     taxPayable = 191147.00 + (income - 673000.00) * 0.39;
-                }else if (income > 857900.00 && income <= 1817000.00){
+                } else if (income > 857900.00 && income <= 1817000.00) {
                     taxPayable = 251258.00 + (income - 857900.00) * 0.41;
-                }else if (income > 1817000.00){
+                } else if (income > 1817000.00) {
                     taxPayable = 644489.00 + (income - 1817000.00) * 0.45;
                 }
 
-              // Rebate subtraction
+                // Rebate subtraction
                 Double rebatedIncome = taxPayable - secondary;
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
                         "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
                         "Result", JOptionPane.INFORMATION_MESSAGE);
-            }else if (age >= 75 && income > 165689.00) {
+            } else if (age >= 75 && income > 165689.00) {
                 if (income >= 1.00 && income <= 237100.00) {
                     taxPayable = income * 0.18;
                 } else if (income > 237100.00 && income <= 370500.00) {
                     taxPayable = 42678.00 + (income - 237100.00) * 0.26;
                 } else if (income > 370500.00 && income <= 512800.00) {
                     taxPayable = 77362.00 + (income - 370500.00) * 0.31;
-                }else if (income > 512800.00 && income <= 673000.00){
+                } else if (income > 512800.00 && income <= 673000.00) {
                     taxPayable = 121475.00 + (income - 512800.00) * 0.36;
-                }else if (income > 673000.00 && income <= 857900.00){
+                } else if (income > 673000.00 && income <= 857900.00) {
                     taxPayable = 191147.00 + (income - 673000.00) * 0.39;
-                }else if (income > 857900.00 && income <= 1817000.00){
+                } else if (income > 857900.00 && income <= 1817000.00) {
                     taxPayable = 251258.00 + (income - 857900.00) * 0.41;
-                }else if (income > 1817000.00){
+                } else if (income > 1817000.00) {
                     taxPayable = 644489.00 + (income - 1817000.00) * 0.45;
                 }
 
-              // Rebate subtraction
+                // Rebate subtraction
                 Double rebatedIncome = taxPayable - tertiary;
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
                         "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
                         "Result", JOptionPane.INFORMATION_MESSAGE);
-            }else{
+            } else {
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
                         "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + taxPayable,
