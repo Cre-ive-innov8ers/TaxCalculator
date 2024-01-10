@@ -60,7 +60,8 @@ public class TaxCalculator {
                 Double rebatedIncome = taxPayable - primary;
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
-                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
+                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome + 
+                        " and take away salary is R"+ (income - rebatedIncome - 0.01*income)+" After deducting 1% UIF.",
                         "Result", JOptionPane.INFORMATION_MESSAGE);
 
             } else if (age >= 65 && age < 75 && income > 135150.00) {
@@ -84,7 +85,8 @@ public class TaxCalculator {
                 Double rebatedIncome = taxPayable - secondary;
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
-                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
+                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome + 
+                        " and take away salary is R"+ (income - rebatedIncome - 0.01*income)+" After deducting 1% UIF.",
                         "Result", JOptionPane.INFORMATION_MESSAGE);
 
             } else if (age >= 75 && income > 151100.00) {
@@ -108,13 +110,15 @@ public class TaxCalculator {
                 Double rebatedIncome = taxPayable - tertiary;
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
-                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
+                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome + 
+                        " and take away salary is R"+ (income - rebatedIncome - 0.01*income)+" After deducting 1% UIF.",
                         "Result", JOptionPane.INFORMATION_MESSAGE);
 
             } else {
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
-                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + taxPayable,
+                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + taxPayable+ 
+                        " and take away salary is R"+ (income - taxPayable - 0.01*income)+" After deducting 1% UIF.",
                         "Result", JOptionPane.INFORMATION_MESSAGE);
             }
 
@@ -143,7 +147,8 @@ public class TaxCalculator {
                 Double rebatedIncome = taxPayable - primary;
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
-                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
+                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome + 
+                        " and take away salary is R"+ (income - rebatedIncome - 0.01*income)+" After deducting 1% UIF.",
                         "Result", JOptionPane.INFORMATION_MESSAGE);
             } else if (age >= 65 && age < 75 && income > 141250.00) {
                 if (income >= 1.00 && income <= 226000.00) {
@@ -166,7 +171,8 @@ public class TaxCalculator {
                 Double rebatedIncome = taxPayable - secondary;
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
-                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
+                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome + 
+                        " and take away salary is R"+ (income - rebatedIncome - 0.01*income)+" After deducting 1% UIF.",
                         "Result", JOptionPane.INFORMATION_MESSAGE);
             } else if (age >= 75 && income > 157900.00) {
                 if (income >= 1.00 && income <= 226000.00) {
@@ -189,12 +195,14 @@ public class TaxCalculator {
                 Double rebatedIncome = taxPayable - tertiary;
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
-                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
+                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome + 
+                        " and take away salary is R"+ (income - rebatedIncome - 0.01*income)+" After deducting 1% UIF.",
                         "Result", JOptionPane.INFORMATION_MESSAGE);
             } else {
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
-                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + taxPayable,
+                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + taxPayable + 
+                        " and take away salary is R"+ (income - taxPayable - 0.01*income)+" After deducting 1% UIF.",
                         "Result", JOptionPane.INFORMATION_MESSAGE);
             }
 
@@ -223,7 +231,8 @@ public class TaxCalculator {
                 Double rebatedIncome = taxPayable - primary;
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
-                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
+                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome + 
+                        " and take away salary is R"+ (income - rebatedIncome - 0.01*income)+" After deducting 1% UIF.",
                         "Result", JOptionPane.INFORMATION_MESSAGE);
             } else if (age >= 65 && age < 75 && income > 148217.00) {
                 if (income >= 1.00 && income <= 237100.00) {
@@ -246,7 +255,8 @@ public class TaxCalculator {
                 Double rebatedIncome = taxPayable - secondary;
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
-                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
+                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome + 
+                        " and take away salary is R"+ (income - rebatedIncome - 0.01*income)+" After deducting 1% UIF.",
                         "Result", JOptionPane.INFORMATION_MESSAGE);
             } else if (age >= 75 && income > 165689.00) {
                 if (income >= 1.00 && income <= 237100.00) {
@@ -269,12 +279,14 @@ public class TaxCalculator {
                 Double rebatedIncome = taxPayable - tertiary;
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
-                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome,
+                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + rebatedIncome + 
+                        " and take away salary is R"+ (income - rebatedIncome - 0.01*income)+" After deducting 1% UIF.",
                         "Result", JOptionPane.INFORMATION_MESSAGE);
             } else {
                 // Display the result in a message dialog
                 JOptionPane.showMessageDialog(null,
-                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + taxPayable,
+                        "Tax payable for " + inputName + "'s annual income of R" + income + " is R" + taxPayable + 
+                        " and take away salary is R"+ (income - taxPayable - 0.01*income) +" After deducting 1% UIF.",
                         "Result", JOptionPane.INFORMATION_MESSAGE);
             }
         }
