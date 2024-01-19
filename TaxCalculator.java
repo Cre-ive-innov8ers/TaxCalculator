@@ -7,28 +7,62 @@ public class TaxCalculator {
         double income;
         // Double taxPayable = 0.00;
 
-        // Prompt the user for inputs and check their validity
-        inputName = JOptionPane.showInputDialog("Enter your name");
-        inputAge = JOptionPane.showInputDialog("Enter your age");
-        inputTaxYear = JOptionPane.showInputDialog("Enter the tax year");
-        inputIncome = JOptionPane.showInputDialog("Enter your annual income (R)");
+        
 
         while (true) {
+            // Prompt the user for inputs and check their validity
+        inputName = JOptionPane.showInputDialog("Enter your name");
+       
 
-            if (isAlphabetical(inputName) && isNumeric(inputAge) && isNumeric(inputTaxYear) && isNumeric(inputIncome)) {
-                age = Integer.parseInt(inputAge);
-                taxYear = Integer.parseInt(inputTaxYear);
-                income = Double.parseDouble(inputIncome);
-                if (income > 0) {
-                    break; // Valid input, exit the loop
-                } else {
+            if(isAlphabetical(inputName)){
+                 
+            
+                inputAge = JOptionPane.showInputDialog("Enter your age");
+                if(isNumeric(inputAge)){
+                    age = Integer.parseInt(inputAge);
+                    inputTaxYear = JOptionPane.showInputDialog("Enter the tax year");
                     inputIncome = JOptionPane.showInputDialog("Enter your annual income (R)");
-                }
-
-            } else {
-                JOptionPane.showMessageDialog(null, "Invalid input. Please enter valid values.", "Error",
+                    if(isNumeric(inputTaxYear)){
+                        taxYear = Integer.parseInt(inputTaxYear);
+                        if(isNumeric(inputIncome)){
+                            income = Double.parseDouble(inputIncome);
+                            break;
+                        }else{
+                            JOptionPane.showMessageDialog(null, "Invalid income input. Please enter income.", "Error",
+                            JOptionPane.ERROR_MESSAGE);
+                            inputIncome = JOptionPane.showInputDialog("Enter your valid annual income (R)");
+                        }
+                    }else{
+                        inputTaxYear = JOptionPane.showInputDialog("Enter the valid tax year");
+                        JOptionPane.showMessageDialog(null, "Invalid tax year input. Please enter valid tax year.", "Error",
                         JOptionPane.ERROR_MESSAGE);
+                    }
+                }else{
+                    JOptionPane.showMessageDialog(null, "Invalid age input. Please enter valid age value.", "Error",
+                    JOptionPane.ERROR_MESSAGE);
+                    inputAge = JOptionPane.showInputDialog("Enter your correct age");
+
+                }
+            }else{
+                JOptionPane.showMessageDialog(null, "Invalid name input. Please enter valid alphabets .", "Error",
+                        JOptionPane.ERROR_MESSAGE);
+                inputName = JOptionPane.showInputDialog("Enter your name");
             }
+
+            // if (&& ) {
+            //     age = Integer.parseInt(inputAge);
+            //     taxYear = Integer.parseInt(inputTaxYear);
+            //     income = Double.parseDouble(inputIncome);
+            //     if (income > 0 && taxYear >=2022 && taxYear <= 2024) {
+            //         break; // Valid input, exit the loop
+            //     } else {
+            //         inputIncome = JOptionPane.showInputDialog("Enter your annual income (R)");
+            //     }
+
+            // } else {
+            //     JOptionPane.showMessageDialog(null, "Invalid input. Please enter valid values.", "Error",
+            //             JOptionPane.ERROR_MESSAGE);
+            // }
         }
 
         // Calculate the tax based on the income brackets
